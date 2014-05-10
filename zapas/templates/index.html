@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block content %}
+     <h1>Valves</h1>
+     {% for valve in valves %}
+         <p> {{valve.valve_number}} | {{valve.valve_name}} {{valve.valve_state}}</p>
+     {% endfor %}
+{% endblock %}
